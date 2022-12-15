@@ -27,7 +27,7 @@ module.exports = {
             "error" -> 2 开启错误规则
         */
 
-        "space-before-function-paren": 1, // 函数定义时括号前面要不要有空格
+        // "space-before-function-paren": 1, // 函数定义时括号前面要不要有空格
         "eol-last": 0, // 文件以单一的换行符结束
         "no-extra-semi": 0, // 可以多余的分号
         "semi": 2, // 语句可以不需要分号结尾

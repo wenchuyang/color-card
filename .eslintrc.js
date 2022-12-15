@@ -126,6 +126,7 @@ module.exports = {
             }
         ],
         "curly": 1, // 必须使用 if(){} 中的{}
-        "quotes": ["warn", "double"] // 必须使用双引号
+        "quotes": ["warn", "double"], // 必须使用双引号
+        "spaced-comment": ["warn", "always", { "exceptions": ["-", "+"] }] // 注释后面必须空一格
     }
 };

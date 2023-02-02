@@ -1,0 +1,16 @@
+.wrapper {
+    margin: 80px;
+    width: 50px;
+    height: 278px;
+    border-top: 6px solid #aaa;
+    cursor: pointer;
+    direction: initial;
+    .inner {
+        width: 100%;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        writing-mode: vertical-lr;
+    }
+}

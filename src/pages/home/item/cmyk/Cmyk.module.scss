@@ -1,0 +1,21 @@
+.inner {
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    .cmyk {
+        display: flex;
+        .ring {
+            width: 28px;
+            height: 28px;
+            &:not(:first-child) {
+                margin-top: 6px;
+            }
+        }
+    }
+    .name {
+        text-align: end;
+    }
+}

@@ -1980,10 +1980,10 @@
   resolved "https://registry.npmjs.org/@types/mime/-/mime-3.0.1.tgz"
   integrity sha512-Y4XFY5VJAuw0FgAqPNd6NNoV44jbq9Bz2L7Rh/J6jLTiHBSBJa9fxqQIvkIld4GsoDOcCbvzOUAbLPsSKKg+uA==
 
-"@types/node@*":
-  version "18.11.13"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.11.13.tgz"
-  integrity sha512-IASpMGVcWpUsx5xBOrxMj7Bl8lqfuTY7FKAnPmu5cHkfQVWF8GulWS1jbRqA934qZL35xh5xN/+Xe/i26Bod4w==
+"@types/node@*", "@types/node@^18.11.18":
+  version "18.11.18"
+  resolved "https://registry.npmjs.org/@types/node/-/node-18.11.18.tgz"
+  integrity sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -7314,6 +7314,13 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
+progressbar.js@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/progressbar.js/-/progressbar.js-1.1.0.tgz"
+  integrity sha512-K68/xcyXKo2I6T3PfIkXrRaycxROmWeU4bugb49iulWR25cU94PM0cfZ47S0jDhG5K3vPhZwCOy1fgb5Pgh6UQ==
+  dependencies:
+    shifty "^2.1.2"
+
 promise@^8.1.0:
   version "8.3.0"
   resolved "https://registry.npmjs.org/promise/-/promise-8.3.0.tgz"
@@ -7999,6 +8006,13 @@ shell-quote@^1.7.3:
   resolved "https://registry.npmjs.org/shell-quote/-/shell-quote-1.7.4.tgz"
   integrity sha512-8o/QEhSSRb1a5i7TFR0iM4G16Z0vYB2OQVs4G3aAFXjn3T6yEx8AZxy1PgDF7I00LZHYA3WxaSYIf5e5sAX8Rw==
 
+shifty@^2.1.2:
+  version "2.20.0"
+  resolved "https://registry.npmjs.org/shifty/-/shifty-2.20.0.tgz"
+  integrity sha512-1XEGiYWC1Z/lVYWHvTmWXR6/x3VkN4Ocucqulmm2/rHx3zVJpD8SIhab5h7nd3bwysH+OBgE+nCE4ljVudfxtw==
+  optionalDependencies:
+    fsevents "^2.3.2"
+
 side-channel@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npmjs.org/side-channel/-/side-channel-1.0.4.tgz"
@@ -8521,7 +8535,7 @@ tryer@^1.0.1:
 
 ts-loader@^9.4.2:
   version "9.4.2"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-9.4.2.tgz#80a45eee92dd5170b900b3d00abcfa14949aeb78"
+  resolved "https://registry.npmjs.org/ts-loader/-/ts-loader-9.4.2.tgz"
   integrity sha512-OmlC4WVmFv5I0PpaxYb+qGeGOdm5giHU7HwDDUjw59emP2UYMHy9fFSDcYgSNoH8sXcj4hGCSEhlDZ9ULeDraA==
   dependencies:
     chalk "^4.1.0"

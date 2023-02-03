@@ -3,7 +3,7 @@
  * Created Date: 2022-12-15 17:26:55
  * Author: 文初阳
  * -----
- * Last Modified: 2023-01-28 16:25:27
+ * Last Modified: 2023-02-03 16:15:20
  * Modified By: 文初阳
  */
 /**
@@ -19,5 +19,3 @@ declare module "*.svg" {
     export default content;
 }
 
-// 声明 processbar 插件
-declare module "progressbar.js"

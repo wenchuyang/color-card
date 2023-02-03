@@ -35,7 +35,7 @@ module.exports = {
         "one-var": 0, // 连续声明
         "no-undef": 0, // 可以 有未定义的变量
         "max-len": ["error", { code: 120 }], // 单行最大长度
-        // "indent": ["error", 4], // 缩进
+        "indent": ["error", 4], // 缩进
         "no-extra-boolean-cast": 1, // 不必要的bool转换
         "no-extra-parens": 1, // 非必要的括号
         "no-empty": 0, // 块语句中的内容不能为空

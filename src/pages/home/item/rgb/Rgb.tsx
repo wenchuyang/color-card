@@ -3,26 +3,24 @@
  * Created Date: 2023-02-01 15:33:29
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-02 15:32:32
+ * Last Modified: 2023-02-03 16:13:07
  * Modified By: 文初阳
  */
 import React from "react";
 import style from "./Rgb.module.scss";
 
 interface IProps {
-    rgb: [number, number, number];
-    color: string;
-    name: string;
-    curColor: string;
+    rgb: [number, number, number]; // RGB 的数值
+    color: string; // 颜色代码
+    name: string; // 颜色拼音
+    curColor: string; // 当前展示的样式颜色
 }
 
 const RgbComponent: React.FC<IProps> = ({rgb, color, curColor, name}: IProps) => {
     const [redNum, greenNum, blueNum] = rgb;
     
-    
     return (
         <div className={style.inner}>
-            
             <div className={style.rgbWrapper}>
                 <div className={style.rgb}>
                     <div className={style.line}>
@@ -53,10 +51,9 @@ const RgbComponent: React.FC<IProps> = ({rgb, color, curColor, name}: IProps) =>
                         </div>
                     </div>
                 </div>
-                <div className={style.code}>{String(color).toUpperCase()}</div>
+                <div className={style.code} style={{color: curColor}}>{String(color).toUpperCase()}</div>
             </div>
-            
-            <div className={style.name}>{String(name).toUpperCase()}</div>
+            <div className={style.name} style={{color: curColor}}>{String(name).toUpperCase()}</div>
         </div>
     );
 };

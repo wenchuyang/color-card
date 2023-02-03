@@ -3,86 +3,78 @@
  * Created Date: 2023-02-01 15:17:26
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-02 15:31:15
+ * Last Modified: 2023-02-03 16:11:29
  * Modified By: 文初阳
  */
-import React, { useEffect, useMemo, useRef } from "react";
+import React from "react";
 import style from "./Cmyk.module.scss";
 
-import ProgressBar from "progressbar.js";
+import { Progress } from "antd";
 
 interface IProps {
-    cmyk: [number, number, number, number];
-    color: string;
-    curColor: string;
-    name: string;
+    cmyk: [number, number, number, number]; // CMYK 的值
+    curColor: string; // 当前表现的样式颜色
+    name: string; // 颜色名称
 }
 
-const CmykComponent: React.FC<IProps> = ({cmyk, color, curColor, name}: IProps) => {
+const CmykComponent: React.FC<IProps> = ({ cmyk, curColor, name }: IProps) => {
     const [cyanNum, magentaNum, yellowNum, keyPlateNum] = cmyk;
-    const cyan = useRef(null);
-    const magenta = useRef(null);
-    const yellow = useRef(null);
-    const keyPlate = useRef(null);
     const trailColor = "#CCC";
-    
-    useEffect(()=>{
-        const bar = cyan.current ? new ProgressBar.Circle(cyan.current,{
-            strokeWidth: 28,
-            easing: "easeInOut",
-            duration: 1400,
-            color: curColor,
-            trailColor,
-            trailWidth: 28,
-            svgStyle: null
-        }) : null;
-        bar?.animate(cyanNum / 100); // Number from 0.0 to 1.0
-    }, [cyan.current]);
-    useEffect(()=>{
-        const bar = magenta.current ? new ProgressBar.Circle(magenta.current,{
-            strokeWidth: 28,
-            easing: "easeInOut",
-            duration: 1400,
-            color: curColor,
-            trailColor,
-            trailWidth: 28,
-            svgStyle: null
-        }) : null;
-        bar?.animate(magentaNum / 100); // Number from 0.0 to 1.0
-    }, [magenta.current]);
-    useEffect(()=>{
-        const bar = yellow.current ? new ProgressBar.Circle(yellow.current,{
-            strokeWidth: 28,
-            easing: "easeInOut",
-            duration: 1400,
-            color: curColor,
-            trailColor,
-            trailWidth: 28,
-            svgStyle: null
-        }) : null;
-        bar?.animate(yellowNum / 100); // Number from 0.0 to 1.0
-    }, [yellow.current]);
-    useEffect(()=>{
-        const bar = keyPlate.current ? new ProgressBar.Circle(keyPlate.current,{
-            strokeWidth: 28,
-            easing: "easeInOut",
-            duration: 1400,
-            color: curColor,
-            trailColor,
-            trailWidth: 28,
-            svgStyle: null
-        }) : null;
-        bar?.animate(keyPlateNum / 100); // Number from 0.0 to 1.0
-    }, [keyPlate.current]);
+
     return (
         <div className={style.inner}>
             <div className={style.cmyk}>
-                <div ref={cyan} className={style.ring}></div>
-                <div ref={magenta} className={style.ring}></div>
-                <div ref={yellow} className={style.ring}></div>
-                <div ref={keyPlate} className={style.ring}></div>
+                <div className={style.ring}>
+                    <Progress
+                        width={28}
+                        type="circle"
+                        showInfo={false}
+                        strokeLinecap="butt"
+                        strokeWidth={28}
+                        percent={cyanNum}
+                        strokeColor={curColor}
+                        trailColor={trailColor}
+                    />
+                </div>
+                <div className={style.ring}>
+                    <Progress
+                        width={28}
+                        type="circle"
+                        showInfo={false}
+                        strokeLinecap="butt"
+                        strokeWidth={28}
+                        percent={magentaNum}
+                        strokeColor={curColor}
+                        trailColor={trailColor}
+                    />
+                </div>
+                <div className={style.ring}>
+                    <Progress
+                        width={28}
+                        type="circle"
+                        showInfo={false}
+                        strokeLinecap="butt"
+                        strokeWidth={28}
+                        percent={yellowNum}
+                        strokeColor={curColor}
+                        trailColor={trailColor}
+                    />
+                </div>
+                <div className={style.ring}>
+                    <Progress
+                        width={28}
+                        type="circle"
+                        showInfo={false}
+                        strokeLinecap="butt"
+                        strokeWidth={28}
+                        percent={keyPlateNum}
+                        strokeColor={curColor}
+                        trailColor={trailColor}
+                    />
+                </div>
+                
             </div>
-            <div className={style.name}>{name}</div>
+            <div className={style.name} style={{color: curColor}}>{name}</div>
         </div>
     );
 };

@@ -8,8 +8,6 @@
     .cmyk {
         display: flex;
         .ring {
-            width: 28px;
-            height: 28px;
             &:not(:first-child) {
                 margin-top: 6px;
             }

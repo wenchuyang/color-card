@@ -3,7 +3,7 @@
  * Created Date: 2023-02-03 14:13:28
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-04 22:17:31
+ * Last Modified: 2023-02-04 22:32:23
  * Modified By: 文初阳
  */
 module.exports = {
@@ -16,6 +16,6 @@ module.exports = {
     bracketSpacing: true,
     bracketSameLine: true,
     jsxBracketSameLine: false,
-    proseWrap: "always",
+    proseWrap: "avoid",
     arrowParens: "avoid"
 };

@@ -1,12 +1,15 @@
 .wrapper {
     display: flex;
     direction: rtl;
-    background-color: antiquewhite;
+    transition: background-color 2s;
     .itemsWrapper {
         height: 100vh;
         flex: 1;
         display: flex;
         flex-wrap: wrap;
         overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none
+        }
     }
 }

@@ -1,6 +1,12 @@
 .wrapper {
-    margin: 24px 24px 48px;
     display: flex;
     direction: rtl;
     background-color: antiquewhite;
+    .itemsWrapper {
+        height: 100vh;
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+    }
 }

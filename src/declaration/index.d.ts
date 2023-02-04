@@ -3,7 +3,7 @@
  * Created Date: 2022-12-15 17:26:55
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-03 16:15:20
+ * Last Modified: 2023-02-04 18:51:47
  * Modified By: 文初阳
  */
 /**
@@ -19,3 +19,4 @@ declare module "*.svg" {
     export default content;
 }
 
+declare module "color-rna";

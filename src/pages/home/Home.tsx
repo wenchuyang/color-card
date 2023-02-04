@@ -3,7 +3,7 @@
  * Created Date: 2022-12-14 13:15:10
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-04 22:58:36
+ * Last Modified: 2023-02-04 23:47:13
  * Modified By: 文初阳
  */
 
@@ -33,10 +33,12 @@ const Home: React.FC = () => {
     //     console.log(JSON.stringify(res));
     // },[]);
     const [bgColor, setBgColor] = useState([234, 255, 86]);
-    const rgbaT = useMemo(()=>`rgba(${bgColor.toString()}, 1)`, [bgColor]);
+    // const rgbaT = useMemo(()=>`rgba(${bgColor.toString()}, 1)`, [bgColor]);
     const rgbaB = useMemo(()=>`rgba(${bgColor.toString()}, .9)`, [bgColor]);
+    // const borderWidth = useMemo(()=>bgColor[0], [bgColor]);
+    console.log("重新 render 了");
     return (
-        <div className={style.wrapper} style={{background: `linear-gradient(to top, ${rgbaT} 0%, ${rgbaB})`}}>
+        <div className={style.wrapper} style={{background: rgbaB}}>
             <div className={style.title}>
                 <Title />
             </div>

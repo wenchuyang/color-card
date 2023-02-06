@@ -3,7 +3,7 @@
  * Created Date: 2022-12-14 13:15:10
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-06 15:10:30
+ * Last Modified: 2023-02-06 16:10:36
  * Modified By: 文初阳
  */
 
@@ -34,7 +34,7 @@ const Home: React.FC = () => {
     //     });
     //     console.log(JSON.stringify(res));
     // },[]);
-    const [curItem, setCurItem] = useState<TColor>();
+    const [curItem, setCurItem] = useState<TColor>(colors[Math.floor(Math.random() * 100)]);
     const rgbaB = useMemo(()=>`rgba(${curItem?.rgb?.toString() || "0,0,0"}, .9)`, [curItem]);
     return (
         <div className={style.wrapper} style={{background: rgbaB}}>

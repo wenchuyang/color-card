@@ -3,7 +3,7 @@
  * Created Date: 2022-12-15 22:33:06
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-04 23:59:17
+ * Last Modified: 2023-02-06 16:11:02
  * Modified By: 文初阳
  */
 import React, { Dispatch, SetStateAction, useMemo, useState } from "react";
@@ -19,7 +19,7 @@ interface IProps {
     code: string;
     name: string;
     spell: string;
-    setCurItem: Dispatch<SetStateAction<TColor | undefined>>;
+    setCurItem: Dispatch<SetStateAction<TColor>>;
 }
 
 const Item: React.FC<IProps> = (curItem: IProps) => {

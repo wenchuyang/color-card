@@ -3,7 +3,7 @@
  * Created Date: 2023-02-01 15:17:26
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-03 16:11:29
+ * Last Modified: 2023-02-06 15:48:40
  * Modified By: 文初阳
  */
 import React from "react";
@@ -19,7 +19,7 @@ interface IProps {
 
 const CmykComponent: React.FC<IProps> = ({ cmyk, curColor, name }: IProps) => {
     const [cyanNum, magentaNum, yellowNum, keyPlateNum] = cmyk;
-    const trailColor = "#CCC";
+    const trailColor = "rgba(0,0,0,.1)";
 
     return (
         <div className={style.inner}>

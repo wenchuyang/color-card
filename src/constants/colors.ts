@@ -3,7 +3,7 @@
  * Created Date: 2022-12-15 22:20:08
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-04 22:09:49
+ * Last Modified: 2023-02-06 15:51:40
  * Modified By: 文初阳
  */
 
@@ -18,7 +18,7 @@ export type TColor = {
 export const colors: TColor[] = [
     {
         name: "精白",
-        code: "#fff",
+        code: "#FFFFFF",
         spell: "jīng bái",
         cmyk: [0, 0, 0, 0],
         rgb: [255, 255, 255]

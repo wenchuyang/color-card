@@ -15,7 +15,7 @@
             .line {
                 position: relative;
                 width: 2px;
-                background-color: #CCC;
+                background: rgba(0,0,0,.1);
                 &:not(:first-child) {
                     margin-right: 3px;
                 }

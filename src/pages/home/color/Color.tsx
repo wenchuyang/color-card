@@ -3,7 +3,7 @@
  * Created Date: 2023-02-05 00:08:47
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-05 00:47:26
+ * Last Modified: 2023-02-06 15:49:38
  * Modified By: 文初阳
  */
 import { Progress } from "antd";
@@ -19,7 +19,7 @@ interface IProps {
 const Color: React.FC<IProps> = ({cmyk, rgb}: IProps) => {
     const [cyanNum, magentaNum, yellowNum, keyPlateNum] = cmyk;
     const [red, green, blue] = rgb;
-    const trailColor = "#efefef";
+    const trailColor = "rgba(0,0,0,.1)";
     return (
         <div className={style.wrapper}>
             <div className={style.item}>

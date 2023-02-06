@@ -1,7 +1,14 @@
 .wrapper {
     display: flex;
     direction: rtl;
+    padding: 40px 220px 40px 120px;
     transition: background-color 3s;
+    .name {
+        margin: 48px 100px;
+    }
+    .color {
+        margin-left: 48px;
+    }
     .itemsWrapper {
         height: 100vh;
         flex: 1;

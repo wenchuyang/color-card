@@ -3,7 +3,7 @@
  * Created Date: 2022-12-14 13:15:10
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-05 00:12:31
+ * Last Modified: 2023-02-06 15:10:30
  * Modified By: 文初阳
  */
 
@@ -44,7 +44,7 @@ const Home: React.FC = () => {
             <div className={style.name}>
                 <Name name={curItem?.name || ""} spell={curItem?.spell || ""} />
             </div>
-            <div>
+            <div className={style.color}>
                 <Color cmyk={curItem?.cmyk || [0,0,0,0]} rgb={curItem?.rgb || [0,0,0]} />
             </div>
             <div className={style.itemsWrapper}>

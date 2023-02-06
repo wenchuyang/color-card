@@ -3,7 +3,7 @@
  * Created Date: 2022-12-15 22:20:08
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-06 15:51:40
+ * Last Modified: 2023-02-06 16:50:49
  * Modified By: 文初阳
  */
 
@@ -16,230 +16,6 @@ export type TColor = {
     desc?: string;
 };
 export const colors: TColor[] = [
-    {
-        name: "精白",
-        code: "#FFFFFF",
-        spell: "jīng bái",
-        cmyk: [0, 0, 0, 0],
-        rgb: [255, 255, 255]
-    },
-    {
-        name: "银白",
-        code: "#e9e7ef",
-        spell: "yín bái",
-        cmyk: [3, 3, 0, 6],
-        rgb: [233, 231, 239]
-    },
-    {
-        name: "铅白",
-        code: "#f0f0f4",
-        spell: "qiān bái",
-        cmyk: [2, 2, 0, 4],
-        rgb: [240, 240, 244]
-    },
-    {
-        name: "霜色",
-        code: "#e9f1f6",
-        spell: "shuāng sè",
-        cmyk: [5, 1, 0, 4],
-        rgb: [233, 241, 246]
-    },
-    {
-        name: "雪白",
-        code: "#f0fcff",
-        spell: "xuě bái",
-        cmyk: [6, 1, 0, 0],
-        rgb: [240, 252, 255]
-    },
-    {
-        name: "莹白",
-        code: "#e3f9fd",
-        spell: "yíng bái",
-        cmyk: [10, 1, 0, 1],
-        rgb: [227, 249, 253]
-    },
-    {
-        name: "月白",
-        code: "#d6ecf0",
-        spell: "yuè bái",
-        cmyk: [11, 1, 0, 6],
-        rgb: [214, 236, 240]
-    },
-    {
-        name: "象牙白",
-        code: "#fffbf0",
-        spell: "xiàng yá bái",
-        cmyk: [0, 2, 6, 0],
-        rgb: [255, 251, 240]
-    },
-    {
-        name: "缟",
-        code: "#f2ecde",
-        spell: "gǎo",
-        cmyk: [0, 2, 8, 5],
-        rgb: [242, 236, 222]
-    },
-    {
-        name: "鱼肚白",
-        code: "#fcefe8",
-        spell: "yú dù bái",
-        cmyk: [0, 5, 8, 1],
-        rgb: [252, 239, 232]
-    },
-    {
-        name: "白粉",
-        code: "#fff2df",
-        spell: "bái fěn",
-        cmyk: [0, 5, 13, 0],
-        rgb: [255, 242, 223]
-    },
-    {
-        name: "荼白",
-        code: "#f3f9f1",
-        spell: "tú bái",
-        cmyk: [3, 0, 3, 2],
-        rgb: [243, 249, 241]
-    },
-    {
-        name: "鸭卵青",
-        code: "#e0eee8",
-        spell: "yā luǎn qīng",
-        cmyk: [5, 0, 2, 7],
-        rgb: [224, 238, 232]
-    },
-    {
-        name: "素",
-        code: "#e0f0e9",
-        spell: "sù",
-        cmyk: [6, 0, 3, 6],
-        rgb: [224, 240, 233]
-    },
-    {
-        name: "青白",
-        code: "#c0ebd7",
-        spell: "qīng bái",
-        cmyk: [18, 0, 9, 8],
-        rgb: [192, 235, 215]
-    },
-    {
-        name: "蟹壳青",
-        code: "#bbcdc5",
-        spell: "xiè ké qīng",
-        cmyk: [9, 0, 4, 20],
-        rgb: [187, 205, 197]
-    },
-    {
-        name: "花白",
-        code: "#c2ccd0",
-        spell: "huā bái",
-        cmyk: [7, 2, 0, 18],
-        rgb: [194, 204, 208]
-    },
-    {
-        name: "老银",
-        code: "#bacac6",
-        spell: "lǎo yín",
-        cmyk: [8, 0, 1, 21],
-        rgb: [186, 202, 198]
-    },
-    {
-        name: "灰色",
-        code: "#808080",
-        spell: "huī sè",
-        cmyk: [0, 0, 0, 50],
-        rgb: [128, 128, 128]
-    },
-    {
-        name: "苍色",
-        code: "#75878a",
-        spell: "cāng sè",
-        cmyk: [15, 2, 0, 46],
-        rgb: [117, 135, 138]
-    },
-    {
-        name: "水色",
-        code: "#88ada6",
-        spell: "shuǐ sè",
-        cmyk: [22, 0, 4, 32],
-        rgb: [136, 173, 166]
-    },
-    {
-        name: "黝",
-        code: "#6b6882",
-        spell: "yǒu",
-        cmyk: [18, 20, 0, 49],
-        rgb: [107, 104, 130]
-    },
-    {
-        name: "乌色",
-        code: "#725e82",
-        spell: "wū sè",
-        cmyk: [12, 27, 0, 49],
-        rgb: [114, 94, 130]
-    },
-    {
-        name: "玄青",
-        code: "#3d3b4f",
-        spell: "xuán qīng",
-        cmyk: [23, 26, 0, 69],
-        rgb: [61, 59, 79]
-    },
-    {
-        name: "乌黑",
-        code: "#392f41",
-        spell: "wū hēi",
-        cmyk: [12, 28, 0, 75],
-        rgb: [57, 47, 65]
-    },
-    {
-        name: "黎",
-        code: "#75664d",
-        spell: "lí",
-        cmyk: [0, 13, 35, 54],
-        rgb: [117, 102, 77]
-    },
-    {
-        name: "黧",
-        code: "#5d513c",
-        spell: "lí",
-        cmyk: [0, 11, 33, 64],
-        rgb: [93, 81, 60]
-    },
-    {
-        name: "黝黑",
-        code: "#665757",
-        spell: "yǒu hēi",
-        cmyk: [0, 15, 15, 60],
-        rgb: [102, 87, 87]
-    },
-    {
-        name: "缁色",
-        code: "#493131",
-        spell: "zī sè",
-        cmyk: [0, 34, 34, 71],
-        rgb: [73, 49, 49]
-    },
-    {
-        name: "煤黑",
-        code: "#312520",
-        spell: "méi hēi",
-        cmyk: [0, 21, 32, 81],
-        rgb: [49, 37, 32]
-    },
-    {
-        name: "漆黑",
-        code: "#161823",
-        spell: "qī hēi",
-        cmyk: [36, 36, 0, 86],
-        rgb: [22, 24, 35]
-    },
-    {
-        name: "黑色",
-        code: "#000000",
-        spell: "hēi sè",
-        cmyk: [0, 0, 0, 100],
-        rgb: [0, 0, 0]
-    },
     {
         name: "樱草色",
         code: "#eaff56",
@@ -1156,5 +932,228 @@ export const colors: TColor[] = [
         spell: "xuán sè",
         cmyk: [0, 58, 71, 62],
         rgb: [98, 42, 29]
+    }, {
+        name: "精白",
+        code: "#FFFFFF",
+        spell: "jīng bái",
+        cmyk: [0, 0, 0, 0],
+        rgb: [255, 255, 255]
+    },
+    {
+        name: "银白",
+        code: "#e9e7ef",
+        spell: "yín bái",
+        cmyk: [3, 3, 0, 6],
+        rgb: [233, 231, 239]
+    },
+    {
+        name: "铅白",
+        code: "#f0f0f4",
+        spell: "qiān bái",
+        cmyk: [2, 2, 0, 4],
+        rgb: [240, 240, 244]
+    },
+    {
+        name: "霜色",
+        code: "#e9f1f6",
+        spell: "shuāng sè",
+        cmyk: [5, 1, 0, 4],
+        rgb: [233, 241, 246]
+    },
+    {
+        name: "雪白",
+        code: "#f0fcff",
+        spell: "xuě bái",
+        cmyk: [6, 1, 0, 0],
+        rgb: [240, 252, 255]
+    },
+    {
+        name: "莹白",
+        code: "#e3f9fd",
+        spell: "yíng bái",
+        cmyk: [10, 1, 0, 1],
+        rgb: [227, 249, 253]
+    },
+    {
+        name: "月白",
+        code: "#d6ecf0",
+        spell: "yuè bái",
+        cmyk: [11, 1, 0, 6],
+        rgb: [214, 236, 240]
+    },
+    {
+        name: "象牙白",
+        code: "#fffbf0",
+        spell: "xiàng yá bái",
+        cmyk: [0, 2, 6, 0],
+        rgb: [255, 251, 240]
+    },
+    {
+        name: "缟",
+        code: "#f2ecde",
+        spell: "gǎo",
+        cmyk: [0, 2, 8, 5],
+        rgb: [242, 236, 222]
+    },
+    {
+        name: "鱼肚白",
+        code: "#fcefe8",
+        spell: "yú dù bái",
+        cmyk: [0, 5, 8, 1],
+        rgb: [252, 239, 232]
+    },
+    {
+        name: "白粉",
+        code: "#fff2df",
+        spell: "bái fěn",
+        cmyk: [0, 5, 13, 0],
+        rgb: [255, 242, 223]
+    },
+    {
+        name: "荼白",
+        code: "#f3f9f1",
+        spell: "tú bái",
+        cmyk: [3, 0, 3, 2],
+        rgb: [243, 249, 241]
+    },
+    {
+        name: "鸭卵青",
+        code: "#e0eee8",
+        spell: "yā luǎn qīng",
+        cmyk: [5, 0, 2, 7],
+        rgb: [224, 238, 232]
+    },
+    {
+        name: "素",
+        code: "#e0f0e9",
+        spell: "sù",
+        cmyk: [6, 0, 3, 6],
+        rgb: [224, 240, 233]
+    },
+    {
+        name: "青白",
+        code: "#c0ebd7",
+        spell: "qīng bái",
+        cmyk: [18, 0, 9, 8],
+        rgb: [192, 235, 215]
+    },
+    {
+        name: "蟹壳青",
+        code: "#bbcdc5",
+        spell: "xiè ké qīng",
+        cmyk: [9, 0, 4, 20],
+        rgb: [187, 205, 197]
+    },
+    {
+        name: "花白",
+        code: "#c2ccd0",
+        spell: "huā bái",
+        cmyk: [7, 2, 0, 18],
+        rgb: [194, 204, 208]
+    },
+    {
+        name: "老银",
+        code: "#bacac6",
+        spell: "lǎo yín",
+        cmyk: [8, 0, 1, 21],
+        rgb: [186, 202, 198]
+    },
+    {
+        name: "灰色",
+        code: "#808080",
+        spell: "huī sè",
+        cmyk: [0, 0, 0, 50],
+        rgb: [128, 128, 128]
+    },
+    {
+        name: "苍色",
+        code: "#75878a",
+        spell: "cāng sè",
+        cmyk: [15, 2, 0, 46],
+        rgb: [117, 135, 138]
+    },
+    {
+        name: "水色",
+        code: "#88ada6",
+        spell: "shuǐ sè",
+        cmyk: [22, 0, 4, 32],
+        rgb: [136, 173, 166]
+    },
+    {
+        name: "黝",
+        code: "#6b6882",
+        spell: "yǒu",
+        cmyk: [18, 20, 0, 49],
+        rgb: [107, 104, 130]
+    },
+    {
+        name: "乌色",
+        code: "#725e82",
+        spell: "wū sè",
+        cmyk: [12, 27, 0, 49],
+        rgb: [114, 94, 130]
+    },
+    {
+        name: "玄青",
+        code: "#3d3b4f",
+        spell: "xuán qīng",
+        cmyk: [23, 26, 0, 69],
+        rgb: [61, 59, 79]
+    },
+    {
+        name: "乌黑",
+        code: "#392f41",
+        spell: "wū hēi",
+        cmyk: [12, 28, 0, 75],
+        rgb: [57, 47, 65]
+    },
+    {
+        name: "黎",
+        code: "#75664d",
+        spell: "lí",
+        cmyk: [0, 13, 35, 54],
+        rgb: [117, 102, 77]
+    },
+    {
+        name: "黧",
+        code: "#5d513c",
+        spell: "lí",
+        cmyk: [0, 11, 33, 64],
+        rgb: [93, 81, 60]
+    },
+    {
+        name: "黝黑",
+        code: "#665757",
+        spell: "yǒu hēi",
+        cmyk: [0, 15, 15, 60],
+        rgb: [102, 87, 87]
+    },
+    {
+        name: "缁色",
+        code: "#493131",
+        spell: "zī sè",
+        cmyk: [0, 34, 34, 71],
+        rgb: [73, 49, 49]
+    },
+    {
+        name: "煤黑",
+        code: "#312520",
+        spell: "méi hēi",
+        cmyk: [0, 21, 32, 81],
+        rgb: [49, 37, 32]
+    },
+    {
+        name: "漆黑",
+        code: "#161823",
+        spell: "qī hēi",
+        cmyk: [36, 36, 0, 86],
+        rgb: [22, 24, 35]
+    },
+    {
+        name: "黑色",
+        code: "#000000",
+        spell: "hēi sè",
+        cmyk: [0, 0, 0, 100],
+        rgb: [0, 0, 0]
     }
 ];

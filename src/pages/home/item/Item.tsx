@@ -3,7 +3,7 @@
  * Created Date: 2022-12-15 22:33:06
  * Author: 文初阳
  * -----
- * Last Modified: 2023-02-06 16:11:02
+ * Last Modified: 2023-02-06 16:16:27
  * Modified By: 文初阳
  */
 import React, { Dispatch, SetStateAction, useMemo, useState } from "react";
@@ -30,7 +30,7 @@ const Item: React.FC<IProps> = (curItem: IProps) => {
     return (
         <div 
             className={style.wrapper}
-            style={{borderTopColor: code}}
+            style={{borderTopColor: code, background: `rgba(${rgb.toString()}, .3)`}}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onClick={() => {setCurItem(curItem);}}>

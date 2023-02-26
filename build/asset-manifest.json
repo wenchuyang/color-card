@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/colorcard/build/static/css/main.3505c8da.css",
+    "main.js": "/colorcard/build/static/js/main.01a28ef1.js",
+    "static/media/清松手写体1.ttf": "/colorcard/build/static/media/清松手写体1.035266fd213c220e13c3.ttf",
+    "static/media/logo.svg": "/colorcard/build/static/media/logo.3a975888dcc62bc7e73e46de5bb799f2.svg",
+    "index.html": "/colorcard/build/index.html",
+    "main.3505c8da.css.map": "/colorcard/build/static/css/main.3505c8da.css.map",
+    "main.01a28ef1.js.map": "/colorcard/build/static/js/main.01a28ef1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3505c8da.css",
+    "static/js/main.01a28ef1.js"
+  ]
+}
